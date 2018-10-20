@@ -21,6 +21,18 @@
                     <p>&nbsp;<br>
                     <p>Assign different <code>roles</code> to users and login from different browsers <br>
                         to see <code>access control</code> and <code>authorization</code> at work.</p>
+
+
+<div class="form-group col-sm-6">
+    {!! Form::open(array('class' => 'form', 'method' => 'post', 'url' => url('/home/fileUpload'))) !!}
+       {!! Form::input('file', 'image', null, ['placeholder' => 'Image', 'id' => 'image', 'accept' => 'image/*']) !!}
+       {!! Form::submit('SUBMIT', ['class' => 'btn btn-success btn-sm']) !!}
+    {!! Form::close() !!}
+</div>
+
+
+
+
                 </div>
             </div>
         </div>
